@@ -62,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
                 else if (total >= 50000)
                 {
                    txtBonus.setText("Bonus : Mouse");
+                }else if (total >= 20000)
+                {
+                    txtBonus.setText("Bonus : Earphone");
                 }
                 else
                 {
@@ -71,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 double uangKembalian = (ub-total);
                 if (ub<total)
                 {
-                    txtKeterangan.setText("Keterangan : uang bayar kurang Rp."+(-uangKembalian));
+                    txtKeterangan.setText("Keterangan : Maaf uang yang anda bayarkan kurang sebesar Rp."+(-uangKembalian));
                     txtKembali.setText("Uang Kembalian : Rp. 0");
                 }
                 else
